@@ -1,1 +1,1 @@
-# loriqeet
+# Loriqeet

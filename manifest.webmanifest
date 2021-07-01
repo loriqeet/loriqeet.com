@@ -1,0 +1,27 @@
+---
+layout: null
+---
+{
+  "lang": "en-US",
+  "dir": "ltr",
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.title }}",
+  "icons": [
+    {
+      "src": "{{ '/assets/img/icon-192.png' | prepend: site.baseurl }}",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "{{ '/assets/img/icon-512.png' | prepend: site.baseurl }}",
+      "type": "image/png",
+      "sizes" : "512x512"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF"
+}

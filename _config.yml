@@ -1,0 +1,16 @@
+title: Loriqeet
+description:
+baseurl: ""
+url: "http://loriqeet.com"
+username: loriqeet
+
+defaults:
+  - scope:
+      path: "*"
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
