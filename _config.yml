@@ -1,7 +1,7 @@
 title: Loriqeet
 description:
-baseurl: ""
-url: "http://loriqeet.com"
+baseurl: "/loriqeet"
+url: "https://loriqeet.github.io"
 username: loriqeet
 
 defaults:
