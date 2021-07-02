@@ -1,7 +1,7 @@
 title: Loriqeet
-description:
-baseurl: "/loriqeet"
-url: "https://loriqeet.github.io"
+description: Dynamic custom images for social media sharing
+baseurl: ""
+url: "https://loriqeet.com"
 username: loriqeet
 
 defaults:
@@ -11,6 +11,4 @@ defaults:
       layout: default
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - README.md

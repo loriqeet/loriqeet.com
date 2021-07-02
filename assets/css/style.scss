@@ -1,13 +1,11 @@
 ---
 ---
 
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Pacifico&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+@import "variables";
+@import "bootstrap/scss/bootstrap";
 
-h1 {
+.navbar-brand {
   font-family: "Pacifico", cursive;
-  font-weight: 400;
+  text-transform: lowercase;
 }

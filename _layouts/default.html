@@ -1,4 +1,4 @@
-{%- assign title = site.title -%}
+{%- assign title = site.description | append: ' | ' | append: site.title -%}
 {%- assign description = site.description -%}
 {%- assign url = site.url | append: site.baseurl -%}
 {%- assign image = '/assets/img/image.png' | prepend: site.baseurl | prepend: site.url -%}
@@ -38,8 +38,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="600">
     <meta property="og:image:alt" content="{{ description }}">
-    <!-- <link rel="icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
-    <link rel="icon" href="{{ '/assets/img/icon.svg' | prepend: site.baseurl }}" type="image/svg+xml">
+    <link rel="icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
+    <!-- <link rel="icon" href="{{ '/assets/img/icon.svg' | prepend: site.baseurl }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | prepend: site.baseurl }}">
     <link rel="manifest" href="{{ '/manifest.webmanifest' | prepend: site.baseurl }}"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,6 +49,22 @@
     <title>{{ title }}</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fs-3" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link small mx-auto mx-lg-2" href="#why-loriqeet">Why Loriqeet?</a>
+            <a class="nav-link small mx-auto mx-lg-2" href="#how-it-works">How it works</a>
+            <a class="nav-link btn btn-sm btn-outline-dark ms-lg-2" href="#try-for-free">Try for free</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     {{ content }}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
