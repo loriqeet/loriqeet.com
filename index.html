@@ -1,29 +1,20 @@
 ---
+layout: null
 ---
 
-<header class="bg-light py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <h1 class="visually-hidden">{{ site.title }}</h1>
-        <p class="lead fs-1">Dynamic custom images <br> for social media sharing</p>
-        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-      </div>
-      <div class="col-12 col-lg-6">
-        <img class="img-fluid" src="{{ '/assets/img/image.jpg' | prepend: site.baseurl }}" alt="">
-      </div>
-    </div>
-  </div>
-</header>
-
-<section class="py-5">
-  <div class="container">
-    <h2>Why Loriqeet?</h2>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container">
-    <h2>How it works</h2>
-  </div>
-</section>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
+    <title>{{ site.title }}</title>
+  </head>
+  <body class="p-5 bg-dark text-white">
+    <h1 class="display-1 mb-5">{{ site.title | downcase }}</h1>
+    <p class="lead">{{ site.description }}</p>
+  </body>
+</html>
