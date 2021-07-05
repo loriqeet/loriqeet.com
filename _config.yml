@@ -10,5 +10,8 @@ defaults:
     values:
       layout: default
 
-# exclude:
-#   - README.md
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
