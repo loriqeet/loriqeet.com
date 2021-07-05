@@ -42,9 +42,6 @@
     <!-- <link rel="icon" href="{{ '/assets/img/icon.svg' | prepend: site.baseurl }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | prepend: site.baseurl }}">
     <link rel="manifest" href="{{ '/manifest.webmanifest' | prepend: site.baseurl }}"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
     <title>{{ title }}</title>
@@ -59,12 +56,11 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link small mx-auto mx-lg-2" href="#why-loriqeet">Why loriqeet?</a>
-            <a class="nav-link small mx-auto mx-lg-2" href="#how-loriqeet-works">How loriqeet works</a>
             <a class="nav-link small mx-auto d-block d-lg-none" href="#try-loriqeet-for-free">Try loriqeet for free</a>
           </div>
         </div>
         <div class="d-none d-lg-block ms-lg-2">
-          <a class="btn btn-outline-info" href="#try-loriqeet-for-free">Try loriqeet for free</a>
+          <a class="btn btn-primary" href="#try-loriqeet-for-free">Try loriqeet for free</a>
         </div>
       </div>
     </nav>
@@ -88,11 +84,12 @@
         </div>
         <div class="row">
           <div class="col-12 col-lg-6 text-center text-lg-start">
-            <p class="mb-4 small">&copy; 2021 Loriqeet. All rights reserved.</p>
+            <p class="mb-4 small">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
           </div>
         </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
   </body>
 </html>
