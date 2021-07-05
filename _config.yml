@@ -10,5 +10,5 @@ defaults:
     values:
       layout: default
 
-exclude:
-  - README.md
+# exclude:
+#   - README.md
