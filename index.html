@@ -2,20 +2,57 @@
 layout: null
 ---
 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
-    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Source+Code+Pro&display=swap">
+    <title>Dynamic custom images for social media sharing | Loriqeet</title>
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      .box {
+        margin: auto 6rem;
+      }
+      h1 {
+        font-family: "Pacifico", sans-serif;
+        font-size: 6rem;
+        font-weight: 400;
+        text-transform: lowercase;
+        margin: 0 0 2rem 0;
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 1.5rem 0;
+      }
+      code {
+        font-family: "Source Code Pro", monospace;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #ccc;
+      }
+    </style>
   </head>
-  <body class="p-5 bg-dark text-white">
-    <h1 class="display-1 mb-5">{{ site.title | downcase }}</h1>
-    <p class="lead">{{ site.description }}</p>
-    <p>loriqeet.com</p>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Loriqeet</h1>
+        <p>loriqeet.com</p>
+      </div>
+    </div>
   </body>
 </html>
