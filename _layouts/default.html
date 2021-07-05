@@ -7,7 +7,7 @@
     {%- assign url = page.url | prepend: url -%}
   {%- endif -%}
   {%- if page.title -%}
-    {%- assign title = page.title | append: ' | ' | append: title -%}
+    {%- assign title = page.title | append: ' | ' | append: site.title -%}
   {%- endif -%}
   {%- if page.description -%}
     {%- assign description = page.description -%}
