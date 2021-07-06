@@ -1,58 +1,73 @@
 ---
-layout: null
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Source+Code+Pro&display=swap">
-    <title>Dynamic custom images for social media sharing | Loriqeet</title>
-    <style>
-      body {
-        background: #000;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-      }
-      .box {
-        margin: auto 6rem;
-      }
-      h1 {
-        font-family: "Pacifico", sans-serif;
-        font-size: 6rem;
-        font-weight: 400;
-        text-transform: lowercase;
-        margin: 0 0 2rem 0;
-      }
-      p {
-        font-family: "Open Sans", sans-serif;
-        font-size: 2rem;
-        font-weight: 400;
-        margin: 1.5rem 0;
-      }
-      code {
-        font-family: "Source Code Pro", monospace;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #ccc;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="box">
-        <h1>Loriqeet</h1>
-        <p>loriqeet.com</p>
+<header class="bg-light border-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 py-5 text-center text-lg-start">
+        <h1 class="visually-hidden">{{ site.title }}</h1>
+        <p class="display-6">Dynamic custom images<br>for social media sharing</p>
+        <p class="lead my-4">Increase engagement on all social media platforms with template-driven images customised for every page on your website.</p>
+        <a class="btn btn-lg btn-primary" href="#try-loriqeet-for-free">Try loriqeet for free</a>
+      </div>
+      <div class="col-12 col-lg-6 pt-lg-5 text-center text-lg-end">
+        <img class="img-fluid" src="{{ '/assets/img/iphone.png' | prepend: site.baseurl }}" alt="">
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</header>
+
+<section class="py-5 text-center ">
+  <div class="container">
+    <h2 class="display-6 mb-5" id="why-loriqeet">Why loriqeet?</h2>
+    <hr class="mx-auto my-5 w-50 w-lg-25">
+    <div class="row my-5">
+      <div class="col-12 col-lg-6">
+        <p class="display-1 text-secondary"><i class="bi bi-people-fill"></i></p>
+        <h3 class="h4">For marketers &amp; product managers</h3>
+        <p class="lead">Increase click-through rates when sharing<br class="d-none d-sm-block">campaigns and products on social media.</p>
+        <ul class="list-unstyled lh-lg">
+          <li>Tailor your messaging to individual sections or even pages of a website</li>
+          <li>Maintain consistent branding throughout</li>
+          <li>Stand out from your competition</li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6">
+        <p class="display-1 text-secondary"><i class="bi bi-tools"></i></p>
+        <h3 class="h4">For designers &amp; developers</h3>
+        <p class="lead">Limitless design possibilities<br class="d-none d-sm-block">with super-simple integration.</p>
+        <ul class="list-unstyled lh-lg">
+          <li>Build responsive templates that work perfectly accross all social media platforms</li>
+          <li>Use your own design system and brand assets</li>
+          <li>Integrate effortlessly with any CMS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 text-center text-lg-start">
+        <h2 class="display-6" id="try-loriqeet-for-free">Try loriqeet for free</h2>
+        <p class="lead my-4">Complete the form and we'll be<br>in touch to help get you set up.</p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <form class="mx-3 mx-lg-0" id="contact-form" action="https://formspree.io/f/mvodqlwp" method="post">
+          <div class="my-3">
+            <label for="email" class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" id="email" placeholder="you@yourcompany.com" size="100" required>
+          </div>
+          <div class="my-3">
+            <label for="company" class="form-label">Company name</label>
+            <input name="company" type="text" class="form-control" id="company" size="100" required>
+          </div>
+          <div class="my-4 d-grid d-lg-block">
+            <button id="contact-form-button" type="submit" class="btn btn-primary"><i class="bi bi-envelope-fill"></i> Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
