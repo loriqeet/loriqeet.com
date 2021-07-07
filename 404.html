@@ -1,7 +1,16 @@
 ---
-code: 404
 title: Page not found
 description: The requested page could not be found.
 permalink: /404.html
-layout: error
+nav: false
+footer: false
 ---
+
+<main class="d-flex vh-100 align-items-center bg-dark text-light text-center">
+  <div class="container">
+    <p class="small font-monospace">404</p>
+    <h1 class="display-1 font-monospace">{{ page.title }}</h1>
+    <p class="lead my-4">{{ page.description }}</p>
+    <a class="btn btn-lg btn-primary" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+  </div>
+</main>
