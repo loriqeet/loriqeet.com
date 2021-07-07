@@ -1,20 +1,7 @@
 ---
+code: 404
 title: Page not found
 description: The requested page could not be found.
 permalink: /404.html
+layout: error
 ---
-
-<header class="bg-light border-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 py-5 text-center text-lg-start">
-        <h1 class="display-6">{{ page.title }}</h1>
-        <p class="lead my-4">{{ page.description }}</p>
-        <a class="btn btn-lg btn-primary" href="{{ '/' | prepend: site.baseurl }}">Home</a>
-      </div>
-      <div class="col-12 col-lg-6 pt-lg-5 text-center text-lg-end">
-        <img class="img-fluid" src="{{ '/assets/img/iphone.png' | prepend: site.baseurl }}" alt="">
-      </div>
-    </div>
-  </div>
-</header>
