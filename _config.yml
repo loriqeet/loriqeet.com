@@ -3,12 +3,13 @@ description: Dynamic custom images for social media sharing
 baseurl: ""
 url: "https://loriqeet.com"
 username: loriqeet
+formspreeurl: https://formspree.io/f/mvodqlwp
 
 defaults:
   - scope:
       path: "*"
     values:
-      layout: default
+      layout: page
 
 exclude:
   - Gemfile
