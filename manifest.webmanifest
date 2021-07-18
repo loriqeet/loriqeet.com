@@ -8,12 +8,12 @@ layout: null
   "short_name": "{{ site.title }}",
   "icons": [
     {
-      "src": "{{ '/assets/img/icon-192.png' | prepend: site.baseurl }}",
+      "src": "https://assets.loriqeet.com/img/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "{{ '/assets/img/icon-512.png' | prepend: site.baseurl }}",
+      "src": "https://assets.loriqeet.com/img/icon-512.png",
       "type": "image/png",
       "sizes" : "512x512"
     }
