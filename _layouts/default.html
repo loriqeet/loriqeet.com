@@ -2,20 +2,14 @@
 {%- assign description = site.description -%}
 {%- assign url = site.url | append: site.baseurl -%}
 {%- if page.url != '/' -%}
-  {%- if page.url -%}
-    {%- assign url = page.url | prepend: url -%}
-  {%- endif -%}
-  {%- if page.title -%}
-    {%- assign title = page.title | append: ' | ' | append: site.title -%}
-  {%- endif -%}
-  {%- if page.description -%}
-    {%- assign description = page.description -%}
-  {%- endif -%}
+  {%- assign url = page.url | prepend: url -%}
+  {%- assign title = page.title | append: ' | ' | append: site.title -%}
+  {%- assign description = page.description -%}
 {%- endif -%}
 {%- assign title = title | xml_escape -%}
 {%- assign description = description | xml_escape -%}
 {%- assign image = 'https://images.loriqeet.com/' -%}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
